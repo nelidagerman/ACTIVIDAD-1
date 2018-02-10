@@ -1,0 +1,4 @@
+Se creará un aplicación con el fin de que las personas 
+conozcan los diferentes restaurante, para que según su 
+preferencia y gustos puedan elegir el restaurante ideal 
+teniendo en cuenta su ubicación y el tema.
