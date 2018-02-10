@@ -1,0 +1,7 @@
+Se desea crear una base de datos que permita a los usuarios conocerr la gastronomía de la ciudad, 
+de cada restaurante se desea conocer su nombre, dirección y teléfono. Cada restaurante pertenece 
+a un tipo de restaurante el cual presenta un tema y nivel  calidad 
+Un restaurante puede atender a 
+varios clientes, de los cuales se conoce su nombre, apellido, identificación y dirección. 
+Un cliente puede visitar varios restaurantes; a su vez el cliente debe registrarse a un usuario con
+ su correo y contraseña.
