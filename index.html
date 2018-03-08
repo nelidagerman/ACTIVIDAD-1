@@ -11,20 +11,20 @@
     <title>New Age - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="gh-pages/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gh-pages/vendor/simple-line-icons/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    <link rel="stylesheet" href="gh-pages/device-mockups/device-mockups.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="gh-pages/css/new-age.min.css" rel="stylesheet">
 
   </head>
 
@@ -33,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Inicio</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -41,13 +41,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+              <a class="nav-link js-scroll-trigger" href="#download">Registro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#features">Ingresar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Buscar</a>
             </li>
           </ul>
         </div>
@@ -59,8 +59,8 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+              <h1 class="mb-5">Conoce los Restaurantes mas concurridos de la ciudad</h1>
+              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Registrate aquí</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
@@ -69,7 +69,22 @@
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                    <fieldset>
+                    <br>
+                    <legend class="center">Login</legend>
+                    <form action="loginController.php" role="form" method="post">
+                  
+                    <label for="user">Correo</label>
+                    <input type="text" class="form-control" name="user" placeholder="Ingresa tu usuario(correo)">
+
+                    <label for="pass">Contraseña</label>
+                    <input type="password" autocomplete="off" class="form-control" name="clave" placeholder="Ingresa tu contraseña">
+                    
+                    <br>
+                    <center>
+                    <button class="btn btn-acton" type="submit">Ingresar</button></center>
+                    </form>
+                    </fieldset>
                   </div>
                   <div class="button">
                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -86,15 +101,50 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
+            <p align=center> 
+      <br>
+      <center>
+         <h1>REGISTRO.</h1>
+
+      <form action="registroController.php" method="post">
+      <br>
+         <table border="4" width="500" height="150">
+      <tr>
+          <td><b><label>Correo(Usuario)</label></td>
+          <td><input type="email" name="email" placeholder="Correo" required=""></b></td>
+      </tr>
+      <tr>
+          <td><b><label>Contraseña</label></td>
+          <td><input type="password" name="clave" placeholder="escriba una Contraseña" required=""></b></td>
+      </tr>
+      <tr>
+          <td><b><label> Repetir Contraseña</label></td>
+          <td><input type="password" name="clave2" placeholder="repita la contraseña" required=""></b></td>
+      </tr>
+      <tr>
+         <td><b><label>Pimer nombre</label> 
+         <td><input name='nombre1' id="nombre1" type='text' placeholder="Primer nombre" required /></td></b></td>
+      </tr>
+      <tr>
+         <td><b><label>Segundo nombre</label> 
+         <td><b><input name='nombre2' id="nombre2" type='text' placeholder="Segundo nombre" required /></b></td></b></td>
+      </tr>
+      <tr>
+         <td><b><label>Primer apellido</label> 
+         <td><b><input name='apellido1' id="apellido1" type='text' placeholder="Primer apellido" required /></b></td></b></td>
+      </tr>
+      <tr>
+         <td><b><label>Segundo apellido</label> 
+         <td><b><input name='apellido2' id="apellido2" type='text' placeholder="Segundo apellido" required /></b></td></b></td>
+      </tr>
+      <tr>
+         <td><b><label>Identificación</label> 
+         <td><b><input name='identificacion' id="identificacion" type='text' placeholder="Idenficicación" required /></b></td></b></td>
+      </tr>
+      </table>
+      <br>
+      <input type='submit' name='submit' value='Loguear' />
+      </form>
     </section>
 
     <section class="features" id="features">
@@ -213,15 +263,15 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="gh-pages/vendor/jquery/jquery.min.js"></script>
+    <script src="gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+    <script src="gh-pages/js/new-age.min.js"></script>
 
-  </body>
+  <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_restaurantes-monteria&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
 
 </html>
